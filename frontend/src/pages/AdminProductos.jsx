@@ -16,7 +16,7 @@ const AdminProductos = () => {
   const cargarProductos = async () => {
     try {
       setCargando(true);
-      const response = await fetch('http://localhost:4000/api/productos');
+      const response = await fetch('https://backend-14-zmcj.onrender.com/api/productos');
       const result = await response.json();
       
       if (result.success) {

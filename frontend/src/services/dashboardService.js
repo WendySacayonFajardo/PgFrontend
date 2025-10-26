@@ -1,7 +1,7 @@
 // Servicio para el Dashboard - Estadísticas generales
 import axios from 'axios';
 
-const API_URL = 'http://localhost:4000/api';
+const API_URL = 'https://backend-14-zmcj.onrender.com/api';
 
 const dashboardService = {
   // Obtener estadísticas generales del dashboard

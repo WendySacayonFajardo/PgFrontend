@@ -64,7 +64,7 @@ const ImageUpload = ({ productId, onImagesUploaded }) => {
         formData.append('foto2', images.foto2);
       }
 
-      const response = await fetch(`http://localhost:4000/api/upload/producto/${productId}`, {
+      const response = await fetch(`https://backend-14-zmcj.onrender.com/api/upload/producto/${productId}`, {
         method: 'POST',
         body: formData
       });

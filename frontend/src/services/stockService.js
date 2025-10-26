@@ -1,7 +1,7 @@
 // Servicio para gestión de stock
 import axios from 'axios';
 
-const API_URL = 'http://localhost:4000/api';
+const API_URL = 'https://backend-14-zmcj.onrender.com/api';
 
 // Función para obtener headers de autenticación
 const getAuthHeaders = () => {

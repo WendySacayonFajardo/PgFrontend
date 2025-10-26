@@ -27,7 +27,7 @@ function VerificarEmail() {
     try {
       setEstado('verificando');
       
-      const response = await fetch(`http://localhost:4000/api/verificacion/verificar-email?token=${token}`, {
+      const response = await fetch(`https://backend-14-zmcj.onrender.com/api/verificacion/verificar-email?token=${token}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'
@@ -61,7 +61,7 @@ function VerificarEmail() {
       const email = prompt('Ingresa tu email para reenviar la verificación:');
       if (!email) return;
 
-      const response = await fetch('http://localhost:4000/api/verificacion/reenviar', {
+      const response = await fetch('https://backend-14-zmcj.onrender.com/api/verificacion/reenviar', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

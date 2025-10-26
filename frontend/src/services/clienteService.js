@@ -1,7 +1,7 @@
 // Servicio para gestión de clientes unificados
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:4000/api';
+const API_BASE_URL = 'https://backend-14-zmcj.onrender.com/api';
 
 class ClienteService {
   // Obtener todos los clientes unificados

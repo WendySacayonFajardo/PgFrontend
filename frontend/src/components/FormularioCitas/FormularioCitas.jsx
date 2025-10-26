@@ -52,7 +52,7 @@ function FormularioCitas({ onCitaCreada, onClose }) {
   const cargarServicios = async () => {
     try {
       console.log('🔄 Cargando servicios desde API...')
-      const response = await fetch('http://localhost:4000/api/servicios')
+      const response = await fetch('https://backend-14-zmcj.onrender.com/api/servicios')
       console.log('📡 Respuesta de servicios:', response.status)
       const data = await response.json()
       console.log('📦 Datos de servicios:', data)
@@ -70,7 +70,7 @@ function FormularioCitas({ onCitaCreada, onClose }) {
   const cargarCombos = async () => {
     try {
       console.log('🔄 Cargando combos desde API...')
-      const response = await fetch('http://localhost:4000/api/servicios/combos')
+      const response = await fetch('https://backend-14-zmcj.onrender.com/api/servicios/combos')
       console.log('📡 Respuesta de combos:', response.status)
       const data = await response.json()
       console.log('📦 Datos de combos:', data)

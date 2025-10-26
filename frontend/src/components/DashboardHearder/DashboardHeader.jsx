@@ -9,17 +9,17 @@ export default function DashboardLogs() {
 
   useEffect(() => {
     // Usuarios más activos
-    axios.get('http://localhost:3000/api/logs/usuarios')
+    axios.get('https://backend-14-zmcj.onrender.com/api/logs/usuarios')
       .then(res => setUsuarios(res.data))
       .catch(err => console.error(err));
 
     // Errores frecuentes
-    axios.get('http://localhost:3000/api/logs/errores')
+    axios.get('https://backend-14-zmcj.onrender.com/api/logs/errores')
       .then(res => setErrores(res.data))
       .catch(err => console.error(err));
 
     // Actividad diaria
-    axios.get('http://localhost:3000/api/logs/actividad')
+    axios.get('https://backend-14-zmcj.onrender.com/api/logs/actividad')
       .then(res => setActividad(res.data))
       .catch(err => console.error(err));
   }, []);
